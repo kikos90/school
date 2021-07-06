@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for item  in school %}
+    
+    <p>
+       {{ item.name }} 
+    </p>
+    <p>
+        {{ item.age }}
+    </p>
+    <p>
+        {{ item.type }}
+    </p>
+
+    {% endfor %}
+
+    {% for item in director %}
+
+    <p>
+        {{ item.name }}
+    </p>
+    <p>
+        {{ item.exeriance }}
+    </p>
+    <p>
+        {{ item.school }}
+    </p>
+
+    {% endfor %}
+
+    {% for item in headteacher %}
+
+    <p>
+        {{ item.name }}
+    </p>
+    <p>
+        {{ item.experiance }}
+    </p>
+    <p>
+        {{ item.director }}
+    </p>
+
+    {% endfor %}
+
+    {% for item in teacher %}
+
+    <p>
+        {{ item.name }}
+    </p>
+    <p>
+        {{ item.lesson }}
+    </p>
+    <p>
+        {{ item.classes }}
+    </p>
+    <p>
+        {{ item.school }}
+    </p>
+    <p>
+        {{ item.headteacher }}
+    </p>
+
+    {% endfor %}
+    
+</body>
+</html>
